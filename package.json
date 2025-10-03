@@ -1,6 +1,6 @@
 {
     "name": "react-svg-icon-compare",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "A React component for comparing and detecting duplicate SVG icons visually",
     "type": "module",
     "main": "dist/index.js",

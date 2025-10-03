@@ -116,6 +116,10 @@ export const IconCompare: React.FC<IconCompareProps> = ({
     setCompareProgress({ current: 0, total: 0 });
   };
 
+  const copyIconName = (name: string) => {
+    navigator.clipboard.writeText(name);
+  };
+
   return (
     <div className={`p-6 space-y-6 ${className}`}>
       <div className="space-y-4">
@@ -234,7 +238,13 @@ export const IconCompare: React.FC<IconCompareProps> = ({
             }`}
           >
             <Icon className="w-7 h-7 text-gray-800" />
-            <span className="text-xs break-all">{name}</span>
+            <span 
+              onClick={() => copyIconName(name)}
+              className="text-xs break-all cursor-pointer hover:text-blue-600 hover:underline"
+              title="Click to copy"
+            >
+              {name}
+            </span>
             {similarity > 0 && (
               <span
                 className={`text-xs font-bold ${

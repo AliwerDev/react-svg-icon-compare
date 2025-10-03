@@ -1,0 +1,48 @@
+{
+    "name": "react-svg-icon-compare",
+    "version": "1.0.1",
+    "description": "A React component for comparing and detecting duplicate SVG icons visually",
+    "type": "module",
+    "main": "dist/index.js",
+    "module": "dist/index.esm.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "rollup -c",
+        "dev": "rollup -c -w",
+        "prepublishOnly": "npm run build"
+    },
+    "keywords": [
+        "react",
+        "svg",
+        "icon",
+        "compare",
+        "duplicate",
+        "visual-comparison",
+        "icon-manager"
+    ],
+    "author": "Your Name",
+    "license": "MIT",
+    "peerDependencies": {
+        "react": ">=18.0.0",
+        "react-dom": ">=18.0.0"
+    },
+    "devDependencies": {
+        "@rollup/plugin-commonjs": "^25.0.0",
+        "@rollup/plugin-node-resolve": "^15.0.0",
+        "@rollup/plugin-typescript": "^11.0.0",
+        "@types/react": "^18.0.0",
+        "@types/react-dom": "^18.0.0",
+        "rollup": "^4.0.0",
+        "rollup-plugin-peer-deps-external": "^2.2.4",
+        "rollup-plugin-postcss": "^4.0.2",
+        "tslib": "^2.6.0",
+        "typescript": "^5.0.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/yourusername/react-svg-icon-compare"
+    }
+}
